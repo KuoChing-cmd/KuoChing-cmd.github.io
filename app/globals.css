@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局极简风小增强 */
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-900 antialiased;
+}
+
+/* 内容最大宽度布局 */
+.page-container {
+  @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* 统一 section 间距 */
+.section {
+  @apply py-10 border-b border-neutral-200;
+}
+
+/* 小标签风格（用于技能、兴趣等） */
+.badge {
+  @apply inline-flex items-center rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium text-neutral-700 bg-white/60;
+}
