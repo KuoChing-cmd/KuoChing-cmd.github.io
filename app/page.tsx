@@ -58,95 +58,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Skills */}
+      {/* Highlights */}
       <section className="section">
-        <SectionTitle>Skills</SectionTitle>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="space-y-2">
-            <SubtleLabel>Core</SubtleLabel>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge">Python</span>
-              <span className="badge">C++</span>
-              <span className="badge">Java</span>
-            </div>
-          </div>
-          <div className="space-y-2">
-            <SubtleLabel>DL / NLP</SubtleLabel>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge">PyTorch</span>
-              <span className="badge">TensorFlow</span>
-              <span className="badge">HF Transformers</span>
-              <span className="badge">scikit-learn</span>
-            </div>
-          </div>
-          <div className="space-y-2">
-            <SubtleLabel>Systems & Data</SubtleLabel>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge">CUDA</span>
-              <span className="badge">Docker</span>
-              <span className="badge">Git</span>
-              <span className="badge">Linux</span>
-              <span className="badge">PostgreSQL</span>
-              <span className="badge">MySQL</span>
-              <span className="badge">SQLite</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Education */}
-      <section className="section">
-        <SectionTitle>Education</SectionTitle>
-        <div className="space-y-6">
-          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
-            <p className="text-sm text-neutral-500">Oct 2025 – Present</p>
-            <h3 className="mt-1 text-base font-semibold text-neutral-900">
-              Ph.D. in Informatics — Kyoto University
-            </h3>
-            <p className="text-sm text-neutral-600">
-              Laboratory:&nbsp;
-              <a
-                href="https://sites.google.com/kyoto-u.ac.jp/takayukiitolaboratory/home"
-                className="underline decoration-neutral-300 hover:decoration-neutral-500"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Takayuki Ito Laboratory
-              </a>{" "}
-              · Graduate School of Informatics
+        <SectionTitle>Highlights</SectionTitle>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-xl border border-neutral-200 bg-white/70 p-4 sm:p-5">
+            <SubtleLabel>Publications</SubtleLabel>
+            <p className="text-sm text-neutral-700">
+              First-author arXiv work on NBCE for long clinical records, plus journal publications in medical text
+              mining.
             </p>
-            <p className="mt-2 text-sm text-neutral-700">
-              Research on multi-agent reinforcement learning, automated negotiation, and computational mechanism design
-              for collective intelligence systems.
-            </p>
+            <a
+              href="#publications"
+              className="mt-3 inline-flex text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500 hover:text-neutral-800"
+            >
+              View papers
+            </a>
           </div>
-
-          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
-            <p className="text-sm text-neutral-500">Apr 2023 – Apr 2025</p>
-            <h3 className="mt-1 text-base font-semibold text-neutral-900">
-              M.Sc. in Informatics — Kyoto University
-            </h3>
-            <p className="text-sm text-neutral-600">
-              Laboratory:&nbsp;
-              <a
-                href="https://medinfo.kuhp.kyoto-u.ac.jp/members/"
-                className="underline decoration-neutral-300 hover:decoration-neutral-500"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Medical Informatics Planning Division
-              </a>{" "}
-              · Graduate School of Medicine, Kyoto University Hospital
+          <div className="rounded-xl border border-neutral-200 bg-white/70 p-4 sm:p-5">
+            <SubtleLabel>Skills</SubtleLabel>
+            <p className="text-sm text-neutral-700">
+              Full-stack research toolkit from ML engineering to data systems, optimized for clinical AI.
             </p>
-            <p className="mt-2 text-sm text-neutral-700">
-              Focused on clinical summarization and trustworthy generative AI for long electronic medical records.
+            <a
+              href="#skills"
+              className="mt-3 inline-flex text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500 hover:text-neutral-800"
+            >
+              View skills
+            </a>
+          </div>
+          <div className="rounded-xl border border-neutral-200 bg-white/70 p-4 sm:p-5">
+            <SubtleLabel>Research Focus</SubtleLabel>
+            <p className="text-sm text-neutral-700">
+              LLMs, multi-agent reinforcement learning, and ethical decision-making frameworks for healthcare systems.
             </p>
+            <a
+              href="#research"
+              className="mt-3 inline-flex text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500 hover:text-neutral-800"
+            >
+              View research
+            </a>
+          </div>
+          <div className="rounded-xl border border-neutral-200 bg-white/70 p-4 sm:p-5">
+            <SubtleLabel>Honors</SubtleLabel>
+            <p className="text-sm text-neutral-700">
+              DoGS SPRING Program Fellow (JST), Nishimura Scholarship, and national Olympiad recognition.
+            </p>
+            <a
+              href="#awards"
+              className="mt-3 inline-flex text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500 hover:text-neutral-800"
+            >
+              View awards
+            </a>
           </div>
         </div>
       </section>
 
       {/* Research Interests */}
-      <section className="section">
+      <section id="research" className="section">
         <SectionTitle>Research</SectionTitle>
         <p className="mb-4 text-neutral-700">
           My work lies at the intersection of <strong>Large Language Models (LLMs)</strong>,{" "}
@@ -234,6 +203,86 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Publications */}
+      <section id="publications" className="section">
+        <SectionTitle>Publications &amp; Preprints</SectionTitle>
+        <ol className="space-y-4 list-decimal list-inside text-sm text-neutral-800">
+          <li>
+            <span className="font-semibold">Zhang, G.</span>, Fukuyama, K., Kishimoto, K., &amp; Kuroda, T. (2024).{" "}
+            <em>
+              Optimizing Automatic Summarization of Long Clinical Records Using Dynamic Context Extension: Testing and
+              Evaluation of the NBCE Method.
+            </em>{" "}
+            <span className="block mt-1">
+              <a
+                href="https://arxiv.org/abs/2411.08586"
+                target="_blank"
+                rel="noreferrer"
+                className="underline decoration-neutral-300 hover:decoration-neutral-500"
+              >
+                arXiv:2411.08586
+              </a>
+            </span>
+          </li>
+          <li>
+            <span className="font-semibold">Mengyue, F.</span>, Lin, Y., Guoqing, Z., et al. (2025).{" "}
+            <em>
+              Study on subtyping and Traditional Chinese Medicine treatment of depression based on machine learning and
+              text mining.
+            </em>{" "}
+            <span className="block">
+              <em>Journal of Traditional Chinese Medicine, 45(5), 1152–1163.</em>
+            </span>
+            <span className="block mt-1">
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/41015814/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline decoration-neutral-300 hover:decoration-neutral-500"
+              >
+                PMCID: PMC12454262
+              </a>
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="section">
+        <SectionTitle>Skills</SectionTitle>
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="space-y-2">
+            <SubtleLabel>Core</SubtleLabel>
+            <div className="flex flex-wrap gap-2">
+              <span className="badge">Python</span>
+              <span className="badge">C++</span>
+              <span className="badge">Java</span>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <SubtleLabel>DL / NLP</SubtleLabel>
+            <div className="flex flex-wrap gap-2">
+              <span className="badge">PyTorch</span>
+              <span className="badge">TensorFlow</span>
+              <span className="badge">HF Transformers</span>
+              <span className="badge">scikit-learn</span>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <SubtleLabel>Systems & Data</SubtleLabel>
+            <div className="flex flex-wrap gap-2">
+              <span className="badge">CUDA</span>
+              <span className="badge">Docker</span>
+              <span className="badge">Git</span>
+              <span className="badge">Linux</span>
+              <span className="badge">PostgreSQL</span>
+              <span className="badge">MySQL</span>
+              <span className="badge">SQLite</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Work Experience */}
       <section className="section">
         <SectionTitle>Work Experience</SectionTitle>
@@ -279,54 +328,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Publications */}
-      <section className="section">
-        <SectionTitle>Publications &amp; Preprints</SectionTitle>
-        <ol className="space-y-4 list-decimal list-inside text-sm text-neutral-800">
-          <li>
-            <span className="font-semibold">Zhang, G.</span>, Fukuyama, K., Kishimoto, K., &amp; Kuroda, T. (2024).{" "}
-            <em>
-              Optimizing Automatic Summarization of Long Clinical Records Using Dynamic Context Extension: Testing and
-              Evaluation of the NBCE Method.
-            </em>{" "}
-            <span className="block mt-1">
-              <a
-                href="https://arxiv.org/abs/2411.08586"
-                target="_blank"
-                rel="noreferrer"
-                className="underline decoration-neutral-300 hover:decoration-neutral-500"
-              >
-                arXiv:2411.08586
-              </a>
-            </span>
-          </li>
-          <li>
-            <span className="font-semibold">Mengyue, F.</span>, Lin, Y., Guoqing, Z., et al. (2025).{" "}
-            <em>
-              Study on subtyping and Traditional Chinese Medicine treatment of depression based on machine learning and
-              text mining.
-            </em>{" "}
-            <span className="block">
-              <em>Journal of Traditional Chinese Medicine, 45(5), 1152–1163.</em>
-            </span>
-            <span className="block mt-1">
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/41015814/"
-                target="_blank"
-                rel="noreferrer"
-                className="underline decoration-neutral-300 hover:decoration-neutral-500"
-              >
-                PMCID: PMC12454262
-              </a>
-            </span>
-          </li>
-        </ol>
-      </section>
-
       {/* Awards */}
-      <section className="section">
+      <section id="awards" className="section">
         <SectionTitle>Awards &amp; Scholarships</SectionTitle>
         <ul className="space-y-3 text-sm text-neutral-800">
+          <li className="rounded-xl border border-neutral-200 bg-white/60 p-4">
+            <p className="font-semibold">
+              DoGS SPRING Program Fellow (Kyoto University, Division of Graduate Studies)
+            </p>
+            <p className="text-xs text-neutral-600 mt-1">
+              Selected under JST’s “Support for Pioneering Research Initiated by the Next Generation (SPRING)” scheme.
+            </p>
+          </li>
           <li className="rounded-xl border border-neutral-200 bg-white/60 p-4">
             <p className="font-semibold">
               Second Prize, China Chemistry Olympiad (Preliminary)
@@ -354,6 +367,57 @@ export default function HomePage() {
             </a>
           </li>
         </ul>
+      </section>
+
+      {/* Education */}
+      <section className="section">
+        <SectionTitle>Education</SectionTitle>
+        <div className="space-y-6">
+          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
+            <p className="text-sm text-neutral-500">Oct 2025 – Present</p>
+            <h3 className="mt-1 text-base font-semibold text-neutral-900">
+              Ph.D. in Informatics — Kyoto University
+            </h3>
+            <p className="text-sm text-neutral-600">
+              Laboratory:&nbsp;
+              <a
+                href="https://sites.google.com/kyoto-u.ac.jp/takayukiitolaboratory/home"
+                className="underline decoration-neutral-300 hover:decoration-neutral-500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Takayuki Ito Laboratory
+              </a>{" "}
+              · Graduate School of Informatics
+            </p>
+            <p className="mt-2 text-sm text-neutral-700">
+              DoGS SPRING Program Fellow, researching multi-agent reinforcement learning, automated negotiation, and
+              computational mechanism design for collective intelligence systems.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
+            <p className="text-sm text-neutral-500">Apr 2023 – Apr 2025</p>
+            <h3 className="mt-1 text-base font-semibold text-neutral-900">
+              M.Sc. in Informatics — Kyoto University
+            </h3>
+            <p className="text-sm text-neutral-600">
+              Laboratory:&nbsp;
+              <a
+                href="https://medinfo.kuhp.kyoto-u.ac.jp/members/"
+                className="underline decoration-neutral-300 hover:decoration-neutral-500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Medical Informatics Planning Division
+              </a>{" "}
+              · Graduate School of Medicine, Kyoto University Hospital
+            </p>
+            <p className="mt-2 text-sm text-neutral-700">
+              Focused on clinical summarization and trustworthy generative AI for long electronic medical records.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Contact */}
