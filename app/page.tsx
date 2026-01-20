@@ -146,60 +146,6 @@ export default function HomePage() {
               .
             </p>
           </div>
-
-          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
-            <h3 className="text-sm font-semibold text-neutral-900">
-              Ethically-Constrained Multi-Agent Reinforcement Learning for Intelligent Healthcare Systems
-            </h3>
-            <p className="mt-2 text-sm text-neutral-700">
-              Current PhD research at the{" "}
-              <a
-                href="https://sites.google.com/kyoto-u.ac.jp/takayukiitolaboratory/home"
-                className="underline decoration-neutral-300 hover:decoration-neutral-500"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Takayuki Ito Laboratory
-              </a>{" "}
-              exploring the <strong>Kallipolis Medical Republic</strong> model, a dynamic multi-agent framework inspired
-              by control theory, social contract philosophy, and large language model cognition.
-            </p>
-            <p className="mt-1 text-sm text-neutral-700">
-              Hospital systems are conceptualized as complex adaptive organizations where autonomous agents (doctors,
-              nurses, administrators, patients) coordinate through ethical communication mechanisms and reinforcement
-              learning under semantic constraints known as the <em>Holy Code</em>.
-            </p>
-            <p className="mt-1 text-sm text-neutral-700">
-              The framework integrates LLM-based action generation with a critic that jointly reasons over both
-              operational outcomes and moral consistency—achieving context-aware, interpretable, and safe
-              decision-making.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-neutral-200 bg-white/60 p-4 sm:p-5">
-            <h3 className="text-sm font-semibold text-neutral-900">Future Work</h3>
-            <p className="mt-2 text-sm text-neutral-700">
-              I plan to extend this semantic reinforcement framework toward multi-modal clinical reasoning by
-              integrating structured EHR data, imaging, and text into a unified decision space. In parallel, I aim to
-              investigate adaptive value systems for multi-agent negotiation and governance, enabling AI systems to
-              balance efficiency, fairness, and ethical stability in complex healthcare environments.
-            </p>
-            <p className="mt-1 text-sm text-neutral-700">
-              Ultimately, this research envisions a new paradigm of{" "}
-              <em>AI governance as an evolving moral-technical ecosystem</em>.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-6 rounded-2xl border border-neutral-200 bg-white/60 p-4">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
-            <Image
-              src="/assets/research_overview.png"
-              alt="Research overview"
-              fill
-              className="object-contain bg-neutral-100"
-            />
-          </div>
         </div>
       </section>
 
