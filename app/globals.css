@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 全局极简风小增强 */
 :root {
   color-scheme: light;
 }
 
 body {
-  @apply bg-neutral-50 text-neutral-900 antialiased;
+  @apply bg-white text-neutral-800 antialiased;
 }
 
-/* 内容最大宽度布局 */
+/* 核心内容布局容器，稍微收窄让阅读更舒适 */
 .page-container {
-  @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-4xl mx-auto px-6 sm:px-12 lg:px-16;
 }
 
-/* 统一 section 间距 */
+/* 统一的学术段落间距 */
 .section {
-  @apply py-10 border-b border-neutral-200;
+  @apply py-8 border-b border-neutral-200/60 last:border-0;
 }
 
-/* 小标签风格（用于技能、兴趣等） */
-.badge {
-  @apply inline-flex items-center rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium text-neutral-700 bg-white/60;
+/* 链接默认样式，用于文内链接 */
+.academic-link {
+  @apply text-blue-700 hover:text-blue-900 hover:underline underline-offset-4 transition-colors;
 }
