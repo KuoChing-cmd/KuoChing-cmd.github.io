@@ -43,7 +43,7 @@ export default function HomePage() {
 
           <div className="shrink-0 w-32 h-32 md:w-48 md:h-48 relative overflow-hidden rounded-md border border-neutral-200">
             <Image
-              src="/assets/profile.jpeg"
+              src="/assets/profile_2.jpeg"
               alt="Profile photo of KuoCh'ing Chang"
               fill
               className="object-cover"
@@ -97,7 +97,7 @@ export default function HomePage() {
         <SectionTitle>Education</SectionTitle>
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:gap-6">
-            <div className="sm:w-32 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Oct 2025 – Present</div>
+            <div className="sm:w-48 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Oct 2025 – Present</div>
             <div>
               <h3 className="text-lg font-semibold text-neutral-900">Ph.D. in Informatics, Kyoto University</h3>
               <p className="text-neutral-700 mt-1">DoGS SPRING Program Fellow (JST).</p>
@@ -105,7 +105,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:gap-6">
-            <div className="sm:w-32 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Apr 2023 – Apr 2025</div>
+            <div className="sm:w-48 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Apr 2023 – Apr 2025</div>
             <div>
               <h3 className="text-lg font-semibold text-neutral-900">M.Sc. in Informatics, Kyoto University</h3>
               <p className="text-neutral-700 mt-1">
@@ -122,7 +122,7 @@ export default function HomePage() {
         <SectionTitle>Work Experience</SectionTitle>
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:gap-6">
-            <div className="sm:w-32 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Apr 2025 – Oct 2025</div>
+            <div className="sm:w-48 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Apr 2025 – Oct 2025</div>
             <div>
               <h3 className="text-lg font-semibold text-neutral-900">Medical AI Research Intern</h3>
               <p className="text-neutral-700 font-medium">Msunhealth (Beijing) Co., Ltd.</p>
@@ -134,7 +134,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:gap-6">
-            <div className="sm:w-32 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Jul 2021 – Sep 2021</div>
+            <div className="sm:w-48 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Jul 2021 – Sep 2021</div>
             <div>
               <h3 className="text-lg font-semibold text-neutral-900">System Operations Intern</h3>
               <p className="text-neutral-700 font-medium">Whale Cloud Technology</p>
@@ -146,7 +146,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:gap-6">
-            <div className="sm:w-32 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Oct 2020 – Jun 2022</div>
+            <div className="sm:w-48 shrink-0 text-neutral-500 font-medium whitespace-nowrap">Oct 2020 – Jun 2022</div>
             <div>
               <h3 className="text-lg font-semibold text-neutral-900">Microsoft Student Ambassador</h3>
               <p className="text-neutral-700 mt-1">
