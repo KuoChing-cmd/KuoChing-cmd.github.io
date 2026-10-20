@@ -17,29 +17,29 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/85 border-b border-slate-200/80 transition-all">
-      <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-10 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-200/80 transition-all">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-10 h-16 flex items-center justify-between gap-4">
         {/* Brand / Logo */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 shrink-0">
           <a
             href="#about"
-            className="text-lg font-bold tracking-tight text-slate-900 hover:text-indigo-600 transition-colors"
+            className="text-base sm:text-lg font-bold tracking-tight text-slate-900 hover:text-indigo-600 transition-colors whitespace-nowrap shrink-0"
           >
             Guoqing (KuoCh&apos;ing) Zhang
           </a>
-          <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="hidden xl:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200 whitespace-nowrap shrink-0">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
             Kyoto Univ · Ph.D.
           </span>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-1 text-sm font-medium text-slate-600">
+        {/* Desktop Navigation (displayed on lg+ screens to ensure zero wrapping) */}
+        <nav className="hidden lg:flex items-center gap-1 text-xs xl:text-sm font-medium text-slate-600 shrink-0">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="px-2.5 py-1.5 rounded-md hover:text-slate-900 hover:bg-slate-100/80 transition-colors"
+              className="px-2 xl:px-2.5 py-1.5 rounded-md hover:text-slate-900 hover:bg-slate-100/80 transition-colors whitespace-nowrap"
             >
               {item.name}
             </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
         </nav>
 
         {/* Quick Social Icons & Mobile Toggle */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <a
             href="https://github.com/KuoChing-cmd"
             target="_blank"
@@ -67,11 +67,11 @@ export default function Navbar() {
             <IconMail className="w-4 h-4" />
           </a>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile / Tablet Menu Button (shown on screens < lg) */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg focus:outline-none"
+            className="lg:hidden p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg focus:outline-none"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? (
@@ -87,9 +87,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile / Tablet Dropdown Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white/95 px-4 pt-2 pb-4 space-y-1 shadow-lg backdrop-blur-md">
+        <div className="lg:hidden border-b border-slate-200 bg-white/95 px-4 pt-2 pb-4 space-y-1 shadow-lg backdrop-blur-md">
           {navItems.map((item) => (
             <a
               key={item.name}

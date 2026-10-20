@@ -1,10 +1,12 @@
 import React from "react";
+import { IconExternalLink } from "./Icons";
 
 interface EducationItem {
   period: string;
   degree: string;
   institution: string;
   subdivision?: string;
+  lab?: { name: string; url: string };
   advisor?: string;
   fellowship?: string;
   focus: string;
@@ -24,6 +26,10 @@ const educationData: EducationItem[] = [
     degree: "Ph.D. in Informatics",
     institution: "Kyoto University",
     subdivision: "Department of Social Informatics, Graduate School of Informatics",
+    lab: {
+      name: "Takayuki Ito Laboratory",
+      url: "https://www.agent.soc.i.kyoto-u.ac.jp"
+    },
     advisor: "Prof. Takayuki Ito",
     fellowship: "DoGS SPRING Program Fellow (JST)",
     focus: "Multi-Agent RL, Mechanism Design, Safe Decision Systems, LLM Agents."
@@ -33,6 +39,11 @@ const educationData: EducationItem[] = [
     degree: "M.Sc. in Informatics",
     institution: "Kyoto University",
     subdivision: "Medical Informatics Planning Division, Graduate School of Medicine, Kyoto University Hospital",
+    lab: {
+      name: "Medical Informatics Planning Division (Kuroda Laboratory)",
+      url: "https://medinfo.kuhp.kyoto-u.ac.jp"
+    },
+    advisor: "Prof. Tomohiro Kuroda (黒田 知宏 教授)",
     focus: "Clinical NLP, Long-Context Modeling, LLM Summarization for electronic medical records."
   }
 ];
@@ -104,6 +115,21 @@ export default function Experience() {
                 {edu.subdivision && (
                   <p className="text-xs sm:text-sm text-slate-600">
                     {edu.subdivision}
+                  </p>
+                )}
+
+                {edu.lab && (
+                  <p className="text-xs sm:text-sm text-slate-600">
+                    <strong>Laboratory:</strong>{" "}
+                    <a
+                      href={edu.lab.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="academic-link"
+                    >
+                      {edu.lab.name}
+                      <IconExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </p>
                 )}
 
