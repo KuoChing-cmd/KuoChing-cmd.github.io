@@ -116,7 +116,7 @@ export default function Publications() {
             Publications &amp; Preprints
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
-            * Indicates corresponding author or primary contribution
+            Published under official name <strong className="text-slate-900 font-semibold">Guoqing Zhang</strong> (Zhang, G. / Guoqing, Z.)
           </p>
         </div>
 

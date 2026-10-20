@@ -4,19 +4,19 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "KuoCh'ing Chang (张瀚文) — Ph.D. Candidate in Informatics, Kyoto University",
+  title: "Guoqing Zhang (KuoCh'ing Chang) — Ph.D. Candidate in Informatics, Kyoto University",
   description:
-    "KuoCh'ing Chang (张瀚文 / Guoqing Zhang), Ph.D. candidate in Informatics at Kyoto University. Research in Long-Context LLMs, Trustworthy Medical AI, Multi-Agent Reinforcement Learning, and Safe Decision Systems.",
+    "Guoqing Zhang (张瀚文 / KuoCh'ing Chang), Ph.D. candidate in Informatics at Kyoto University. Research in Long-Context LLMs, Trustworthy Medical AI, Multi-Agent Reinforcement Learning, and Safe Decision Systems.",
   icons: {
     icon: "/favicon.ico"
   },
   metadataBase: new URL("https://kuoching-cmd.github.io"),
   openGraph: {
-    title: "KuoCh'ing Chang — Medical AI & Multi-Agent Systems",
+    title: "Guoqing Zhang (KuoCh'ing Chang) — Medical AI & Multi-Agent Systems",
     description:
       "Ph.D. candidate at Kyoto University working on Long-Context LLMs, Medical AI, Multi-Agent Reinforcement Learning, and Large-Scale Decision-Making Systems.",
     url: "https://kuoching-cmd.github.io",
-    siteName: "KuoCh'ing Chang",
+    siteName: "Guoqing Zhang (KuoCh'ing Chang)",
     type: "website"
   }
 };

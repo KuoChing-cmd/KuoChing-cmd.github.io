@@ -16,14 +16,14 @@ export default function Footer() {
             &ldquo;Science is built upon curiosity, precision, and empathy — three things I aspire to bring into Medical AI.&rdquo;
           </p>
           <p className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} KuoCh&apos;ing Chang (张瀚文). All rights reserved.
+            &copy; {new Date().getFullYear()} Guoqing Zhang (KuoCh&apos;ing Chang / 张瀚文). All rights reserved.
           </p>
         </div>
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/dnimo"
+              href="https://github.com/KuoChing-cmd"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"

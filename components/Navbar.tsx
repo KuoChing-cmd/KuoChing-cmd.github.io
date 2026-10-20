@@ -25,7 +25,7 @@ export default function Navbar() {
             href="#about"
             className="text-lg font-bold tracking-tight text-slate-900 hover:text-indigo-600 transition-colors"
           >
-            KuoCh&apos;ing Chang
+            Guoqing (KuoCh&apos;ing) Zhang
           </a>
           <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Quick Social Icons & Mobile Toggle */}
         <div className="flex items-center gap-2">
           <a
-            href="https://github.com/dnimo"
+            href="https://github.com/KuoChing-cmd"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub profile"

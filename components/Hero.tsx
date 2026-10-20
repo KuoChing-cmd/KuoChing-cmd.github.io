@@ -35,11 +35,16 @@ export default function Hero() {
               <span className="badge-slate">Kyoto University</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
-              KuoCh&apos;ing Chang{" "}
+              Guoqing Zhang{" "}
               <span className="font-normal text-slate-500 text-xl sm:text-2xl block sm:inline mt-1 sm:mt-0">
-                (张瀚文 / Guoqing Zhang)
+                (张瀚文)
               </span>
             </h1>
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-slate-500">
+              <span><strong>Official &amp; Passport:</strong> Guoqing Zhang</span>
+              <span>·</span>
+              <span><strong>Wade-Giles:</strong> KuoCh&apos;ing Chang</span>
+            </div>
           </div>
 
           {/* Academic Affiliation */}
@@ -47,7 +52,7 @@ export default function Hero() {
             <p>
               <strong>Ph.D. Candidate in Informatics</strong> ·{" "}
               <a
-                href="https://sites.google.com/kyoto-u.ac.jp/takayukiitolaboratory/home"
+                href="https://www.agent.soc.i.kyoto-u.ac.jp"
                 target="_blank"
                 rel="noreferrer"
                 className="academic-link"
@@ -126,7 +131,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://github.com/dnimo"
+              href="https://github.com/KuoChing-cmd"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors shadow-xs"
@@ -153,7 +158,7 @@ export default function Hero() {
             <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 relative overflow-hidden rounded-2xl border-2 border-white shadow-md ring-1 ring-slate-200">
               <Image
                 src="/assets/profile_2.jpeg"
-                alt="KuoCh'ing Chang"
+                alt="Guoqing Zhang (KuoCh'ing Chang)"
                 fill
                 sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, 208px"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"

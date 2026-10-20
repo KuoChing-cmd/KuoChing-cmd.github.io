@@ -29,7 +29,7 @@ const awards: AwardItem[] = [
     year: "National High School Competition",
     link: {
       label: "View Certificate",
-      href: "https://raw.githubusercontent.com/dnimo/img/master/%E5%8C%96%E5%AD%A6%E5%A5%A5%E4%BB%81%E5%8C%B9%E5%85%8B.jpeg"
+      href: "https://raw.githubusercontent.com/KuoChing-cmd/img/master/%E5%8C%96%E5%AD%A6%E5%A5%A5%E4%BB%81%E5%8C%B9%E5%85%8B.jpeg"
     }
   }
 ];
