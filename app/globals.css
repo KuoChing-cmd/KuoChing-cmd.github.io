@@ -6,21 +6,49 @@
   color-scheme: light;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
-  @apply bg-white text-neutral-800 antialiased;
+  @apply bg-slate-50/70 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
-/* 核心内容布局容器，稍微收窄让阅读更舒适 */
+/* 容器布局 */
 .page-container {
-  @apply max-w-4xl mx-auto px-6 sm:px-12 lg:px-16;
+  @apply max-w-4xl mx-auto px-4 sm:px-8 lg:px-10;
 }
 
-/* 统一的学术段落间距 */
-.section {
-  @apply py-8 border-b border-neutral-200/60 last:border-0;
+/* 学术区块分割与呼吸感 */
+.section-wrapper {
+  @apply py-10 sm:py-12 border-b border-slate-200/80 last:border-0;
 }
 
-/* 链接默认样式，用于文内链接 */
+/* 统一学术链接样式 */
 .academic-link {
-  @apply text-blue-700 hover:text-blue-900 hover:underline underline-offset-4 transition-colors;
+  @apply text-indigo-600 hover:text-indigo-800 hover:underline underline-offset-4 font-medium transition-colors inline-flex items-center gap-1;
+}
+
+/* 微交互卡片样式 */
+.academic-card {
+  @apply bg-white border border-slate-200/80 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200;
+}
+
+/* 徽章样式规范 */
+.badge-indigo {
+  @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60;
+}
+
+.badge-emerald {
+  @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/60;
+}
+
+.badge-slate {
+  @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200;
+}
+
+.badge-amber {
+  @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200/60;
 }
