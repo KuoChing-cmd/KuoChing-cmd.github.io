@@ -40,35 +40,6 @@ const projects: ProjectItem[] = [
       "Trained PPO and Actor-Critic agents on over 30,000 real scheduling records with complex constraints.",
       "Delivered real-time sub-100ms CPU inference and seamlessly integrated with hospital HIS infrastructures via enterprise REST APIs."
     ]
-  },
-  {
-    title: "Semantic-Constrained RL for Safe LLM Agents",
-    badge: "Ongoing Project",
-    badgeColor: "badge-amber",
-    metrics: [
-      { label: "Severe Violations", value: "-70%" },
-      { label: "Benchmark Suite", value: "20+ Scenarios" },
-      { label: "Architecture", value: "LLM-Critic" }
-    ],
-    description: [
-      "Proposed “Holy Code,” a novel semantic constraint framework utilizing an LLM-Critic to enforce symbolic ethical rules over autonomous agent trajectories.",
-      "Curated a specialized benchmark featuring 20+ ethical dilemma scenarios for medical triage and clinical emergency staffing.",
-      "Demonstrated over 70% decrease in critical violations while preserving agent reasoning flexibility and task execution performance."
-    ]
-  },
-  {
-    title: "Multi-Modal Medical AI (Radiology + EHR)",
-    badge: "Multimodal Fusion",
-    badgeColor: "badge-slate",
-    metrics: [
-      { label: "Clinical Cohort", value: "120k+ Samples" },
-      { label: "AUC Improvement", value: "+6%" },
-      { label: "Modality", value: "EHR + Imaging" }
-    ],
-    description: [
-      "Constructed deep multimodal fusion networks combining ClinicalBERT text representations with ResNet/Vision Transformer (ViT) imaging backbones.",
-      "Trained on 120k+ paired clinical notes and radiology examinations to forecast patient trajectories and adverse event risks."
-    ]
   }
 ];
 
