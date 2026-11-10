@@ -19,6 +19,25 @@ const newsList: NewsItem[] = [
     )
   },
   {
+    date: "Nov 2026",
+    category: "Preprint",
+    content: (
+      <span>
+        Preprint published on arXiv:{" "}
+        <a
+          href="https://arxiv.org/abs/2611.11960"
+          target="_blank"
+          rel="noreferrer"
+          className="academic-link"
+        >
+          Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment
+          <IconExternalLink className="w-3.5 h-3.5" />
+        </a>
+        .
+      </span>
+    )
+  },
+  {
     date: "Oct 2025",
     category: "Milestone",
     content: (

@@ -40,6 +40,29 @@ const publications: Publication[] = [
 }`
   },
   {
+    id: "icu-discharge-cdss-2026",
+    title: "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
+    authors: (
+      <span>
+        <strong className="text-indigo-900 bg-indigo-50 px-1 py-0.5 rounded font-semibold">Zhang, G.</strong>, Hadfi, R., &amp; Ito, T.
+      </span>
+    ),
+    venue: "arXiv preprint",
+    venueDetail: "arXiv:2611.11960 [cs.LG]",
+    type: "preprint",
+    typeLabel: "Preprint",
+    links: [
+      { label: "arXiv:2611.11960", href: "https://arxiv.org/abs/2611.11960" },
+      { label: "PDF", href: "https://arxiv.org/pdf/2611.11960" }
+    ],
+    bibtex: `@article{zhang2026operation,
+  title={Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment},
+  author={Zhang, Guoqing and Hadfi, Rafik and Ito, Takayuki},
+  journal={arXiv preprint arXiv:2611.11960},
+  year={2026}
+}`
+  },
+  {
     id: "nbce2024",
     title: "Optimizing Automatic Summarization of Long Clinical Records Using Dynamic Context Extension: Testing and Evaluation of the NBCE Method",
     authors: (
@@ -136,7 +159,7 @@ export default function Publications() {
               filter === "conference" ? "bg-white text-slate-900 shadow-xs" : "text-slate-600 hover:text-slate-900"
             }`}
           >
-            Conf &amp; Preprints (2)
+            Conf &amp; Preprints ({publications.filter((p) => p.type === "conference" || p.type === "preprint").length})
           </button>
           <button
             onClick={() => setFilter("journal")}
@@ -144,7 +167,7 @@ export default function Publications() {
               filter === "journal" ? "bg-white text-slate-900 shadow-xs" : "text-slate-600 hover:text-slate-900"
             }`}
           >
-            Journals (1)
+            Journals ({publications.filter((p) => p.type === "journal").length})
           </button>
         </div>
       </div>
