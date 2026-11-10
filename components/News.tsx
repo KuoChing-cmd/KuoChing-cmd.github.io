@@ -13,7 +13,17 @@ const newsList: NewsItem[] = [
     category: "Conference",
     content: (
       <span>
-        Paper accepted at <strong>PRIMA 2026</strong> (The 27th International Conference on Principles and Practice
+        Paper accepted at{" "}
+        <a
+          href="https://www.prima2026.org"
+          target="_blank"
+          rel="noreferrer"
+          className="academic-link"
+        >
+          <strong>PRIMA 2026</strong>
+          <IconExternalLink className="w-3.5 h-3.5" />
+        </a>{" "}
+        (The 27th International Conference on Principles and Practice
         of Multi-Agent Systems): <em>Physics-Informed Multi-Agent Coordination for Hospital Patient Flow Optimization</em> (Kumamoto, Japan).
       </span>
     )

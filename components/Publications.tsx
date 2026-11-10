@@ -29,7 +29,7 @@ const publications: Publication[] = [
     type: "conference",
     typeLabel: "Conference",
     links: [
-      { label: "Conference Details", href: "https://sites.google.com/view/prima2026" }
+      { label: "Conference Details", href: "https://www.prima2026.org" }
     ],
     bibtex: `@inproceedings{zhang2026physics,
   title={Physics-Informed Multi-Agent Coordination for Hospital Patient Flow Optimization},
